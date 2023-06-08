@@ -1,0 +1,7 @@
+FROM golang:1.13.4
+WORKDIR /go/src/github.com/grey-shirt/movies-loader
+ENV GOCACHE /tmp
+WORKDIR /go/src/github/grey-shirt/movies-parser
+RUN go get -u golang.org/x/lint/golint
+COPY . .
+RUN go get -v
