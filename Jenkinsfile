@@ -1,4 +1,4 @@
-def imageName = 'mlabouardy/movies-parser'
+def imageName = 'grey-shirt/movies-parser'
 node('workers'){
     stage('Checkout'){
         checkout scm
